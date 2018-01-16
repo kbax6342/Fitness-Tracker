@@ -1,4 +1,4 @@
-package Businness;
+package Business;
 
 import java.util.Scanner;
 
