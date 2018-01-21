@@ -2,6 +2,7 @@ package Business;
 
 import java.util.Scanner;
 
+
 public class Logic {
 
 	public static void main(String[] args) {
@@ -16,17 +17,28 @@ public class Logic {
 		int differenceWeight;
 		String continueAnswer;
 		
-		
+		//Welcome Statement for the user
 		System.out.println("Welcome to your Fitness Tracker");
 		
-		System.out.println("What part of your body are you working out today?");
+		System.out.println("Please fill out a user profile!");
+		
+
+		
+		//Asking the user what they want
+		System.out.println("What part of your body are you working out today? \n 1. Chest \n 2. Back \n 3. Legs\n 4. Abs ");
 		workoutChoice = answer.nextLine();
 		
+		
+		
+		
 		if(workoutChoice.equalsIgnoreCase("chest")) {
+			
+			
 			//Shows the result of the choice
 			System.out.println("You chose the chest workout");
 			
 			//Giving the User the option to choose which workout they are doing that day
+			
 			//Will eventually change the choice options to a string
 			System.out.println("Please pick a workout out:\n" + "1.Bench Press \n2.Incline Press \n3. Decline Press");
 			chestChoice = answer.nextInt();
