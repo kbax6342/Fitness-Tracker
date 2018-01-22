@@ -2,24 +2,36 @@ package Business;
 
 public class User {
 	
-	public String name;
+	public String firstName;
 	public int age;
-	public int weight;
+	public double weight;
+	public String lastName;
+	
+
 	String email;
 	
-	public User(String name, int age,int weight, String email) {
-		name = "";
-		age = 0;
-		weight = 0;
-		email = "";
+	public User(String firstName, String lastName, int age,double weight, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.weight = weight;
+		this.email = email;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getName() {
-		return name;
+		return firstName;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.firstName = name;
 	}
 
 	public int getAge() {
@@ -30,11 +42,19 @@ public class User {
 		this.age = age;
 	}
 
-	public int getWeight() {
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public double getWeight() {
 		return weight;
 	}
 
-	public void setWeight(int weight) {
+	public void setWeight(double weight) {
 		this.weight = weight;
 	}
 
